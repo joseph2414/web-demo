@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <title> My First Website </title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Shoppe</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- <h1>Hello, web!</h1>
- <p> This site is alive.</p>
+
+<header>
+  <h1>🛒 MiniShoppe</h1>
+  <div id="cart">Cart: <span id="cart-count">0</span></div>
+</header>
+
+<main class="products">
+  <div class="product">
+    <img src="https://via.placeholder.com/200" />
+    <h3>Wireless Headphones</h3>
+    <p>$25</p>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/200" />
+    <h3>Smart Watch</h3>
+    <p>$40</p>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/200" />
+    <h3>Gaming Mouse</h3>
+    <p>$15</p>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
+
